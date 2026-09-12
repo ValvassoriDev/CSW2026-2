@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo</title>
+</head>
+
+<body style="margin: 0; color: #ffffff; font-family: Arial, sans-serif;
+             background-image: url('../img/FLA.png');
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             background-color: #111111;">
+
+<!-- camada escura para dar pra ler o texto por cima da imagem -->
+<div style="background-color: rgba(0, 0, 0, 0.75); min-height: 100vh;">
+
+<div style="text-align: center; padding: 10px;">
+    <a href="../index.html" style="color: #ffffff;">Voltar para a página inicial</a>
+</div>
+
+<!-- faixas vermelho e preto do manto -->
+<div style="height: 25px; background: repeating-linear-gradient(90deg, #C52613 0px, #C52613 40px, #111111 40px, #111111 80px);"></div>
+
+<h1 style="text-align: center; color: #C52613; font-size: 60px; margin: 30px 0 0 0;">FLAMENGO</h1>
+<h3 style="text-align: center; color: #ffffff; margin-top: 5px;">Clube de Regatas do Flamengo - fundado em 17 de novembro de 1895</h3>
+
+<!-- hino do Flamengo -->
+<audio id="hino" src="../audio/hino-flamengo.mp3" autoplay></audio>
+
+<div style="text-align: center; padding: 10px;">
+    <button id="botaoHino" onclick="ligarDesligar()"
+            style="background-color: #C52613; color: #ffffff; border: none; padding: 10px 25px; font-size: 16px; font-weight: bold; cursor: pointer;">
+        TOCAR O HINO
+    </button>
+</div>
+
+<div style="text-align: center; padding: 20px;">
+    <img src="../img/FLA.png" alt="Escudo do Flamengo" style="width: 700px; max-width: 90%;">
+    <p style="color: #C52613; font-weight: bold; font-size: 20px;">O MAIS QUERIDO DO BRASIL</p>
+</div>
+
+<h2 style="text-align: center; color: #C52613;">Sobre o clube</h2>
+<p style="text-align: center; max-width: 700px; margin: 0 auto 30px auto; line-height: 1.6; background-color: rgba(0, 0, 0, 0.6); padding: 15px;">
+    O Flamengo é um dos clubes mais populares do mundo, com mais de 40 milhões
+    de torcedores. Nasceu como clube de remo no Rio de Janeiro, em 1895, e passou
+    a disputar futebol em 1911. Manda seus jogos no Maracanã e treina no
+    Ninho do Urubu. O uniforme com faixas vermelhas e negras deu ao time o
+    apelido de "Manto Sagrado".
+</p>
+
+<h2 style="text-align: center; color: #C52613;">Principais títulos</h2>
+
+<table border="1" style="margin: 0 auto 30px auto; border-collapse: collapse; background-color: rgba(28, 28, 28, 0.9);">
+    <tr style="background-color: #C52613;">
+        <th style="padding: 10px;">Competição</th>
+        <th style="padding: 10px;">Anos</th>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">Mundial / Intercontinental</td>
+        <td style="padding: 10px;">1981</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">Libertadores (4 vezes)</td>
+        <td style="padding: 10px;">1981, 2019, 2022, 2025</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">Campeonato Brasileiro (9 vezes)</td>
+        <td style="padding: 10px;">1980, 1982, 1983, 1987, 1992, 2009, 2019, 2020, 2025</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">Copa do Brasil (5 vezes)</td>
+        <td style="padding: 10px;">1990, 2006, 2013, 2022, 2024</td>
+    </tr>
+    <tr>
+        <td style="padding: 10px;">Campeonato Carioca</td>
+        <td style="padding: 10px;">Maior campeão, com quase 40 títulos</td>
+    </tr>
+</table>
+
+<h2 style="text-align: center; color: #C52613;">Ídolos</h2>
+
+<ul style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: 30px; padding: 20px; list-style: none;">
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Zico<br>"o Galinho"</li>
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Júnior</li>
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Adílio</li>
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Romário</li>
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Bebeto</li>
+    <li style="border: 2px solid #C52613; padding: 15px; background-color: rgba(28, 28, 28, 0.9);">Gabigol</li>
+</ul>
+
+<h2 style="text-align: center; color: #C52613;">Curiosidades</h2>
+
+<ol style="max-width: 700px; margin: 0 auto 30px auto; line-height: 1.8; background-color: rgba(0, 0, 0, 0.6); padding: 20px 20px 20px 50px;">
+    <li>O mascote do time é o urubu, adotado pela torcida nos anos 60.</li>
+    <li>O Flamengo já bateu recordes de público no Maracanã várias vezes.</li>
+    <li>O centro de treinamento do clube se chama Ninho do Urubu.</li>
+    <li>Em 1981 o time venceu o Liverpool por 3 a 0 no Mundial, com três assistências de Zico.</li>
+    <li>Em 2019 e em 2025 o clube ganhou Libertadores e Brasileirão no mesmo ano.</li>
+</ol>
+
+<div style="height: 25px; background: repeating-linear-gradient(90deg, #C52613 0px, #C52613 40px, #111111 40px, #111111 80px);"></div>
+
+<!-- parte do ponto extra -->
+<div style="text-align: center; padding: 40px;">
+    <h2 style="color: #C52613;">VALE UM PONTO EXTRA?</h2>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px; padding: 20px;">
+        <button onclick="clicouSim()"
+                style="background-color: #C52613; color: #ffffff; border: none; padding: 20px 50px; font-size: 22px; font-weight: bold; cursor: pointer;">
+            SIM
+        </button>
+
+        <button id="botaoNao"
+                onmouseover="fugir()"
+                onclick="fugir()"
+                style="background-color: #444444; color: #ffffff; border: none; padding: 20px 50px; font-size: 22px; font-weight: bold; cursor: pointer;">
+            NÃO
+        </button>
+    </div>
+
+    <p id="resposta" style="font-size: 24px; color: #C52613; font-weight: bold;"></p>
+</div>
+
+<div style="text-align: center; padding-bottom: 40px;">
+    <p style="color: #cccccc;"> Uma vez Flamengo, sempre Flamengo!</p>
+</div>
+
+</div>
+
+<script>
+
+var hino = document.getElementById("hino");
+
+// o navegador so deixa tocar depois que a pessoa clica em alguma coisa
+function tentarTocar() {
+    hino.volume = 0.5;
+    hino.play();
+    document.getElementById("botaoHino").innerHTML = "PAUSAR O HINO";
+}
+
+document.addEventListener("click", function() {
+    if (hino.paused) {
+        tentarTocar();
+    }
+});
+
+function ligarDesligar() {
+    if (hino.paused) {
+        tentarTocar();
+    } else {
+        hino.pause();
+        document.getElementById("botaoHino").innerHTML = "TOCAR O HINO";
+    }
+}
+
+window.onload = tentarTocar;
+
+function clicouSim() {
+    document.getElementById("resposta").innerHTML = "Boa escolha! Mengão agradece o ponto extra!";
+}
+
+function fugir() {
+    var botao = document.getElementById("botaoNao");
+
+    // primeira vez ele solta do lugar
+    botao.style.position = "fixed";
+
+    var x = Math.random() * (window.innerWidth - 200);
+    var y = Math.random() * (window.innerHeight - 100);
+
+    botao.style.left = x + "px";
+    botao.style.top = y + "px";
+}
+
+</script>
+
+</body>
+
+</html>
